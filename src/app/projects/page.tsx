@@ -4,14 +4,21 @@ import ProjectCard from "@/components/ProjectCard";
 import { motion } from "framer-motion";
 
 export default function ProjectsPage() {
-  // --- Updated projects data to include liveUrl ---
   const projects = [
+    {
+      title: "TaskTrail",
+      description: "An offline-first productivity app using Spring Boot and SQLite to track goals, habits, and tasks locally.",
+      tags: ["Spring Boot", "Hibernate", "SQLite", "Java", "In Progress"],
+      imageUrl: "/project-placeholder.png",
+      githubUrl: "https://github.com/visheshraghuvanshi/tasktrail",
+      liveUrl: "#", 
+    },
     {
       title: "Personal Expense Tracker",
       description: "A web application to manage and analyze personal expenses with real-time insights.",
       tags: ["Spring Boot", "MySQL", "Java", "JWT"],
       imageUrl: "/project-placeholder.png",
-      githubUrl: "#", // Add your GitHub link
+      githubUrl: "https://github.com/visheshraghuvanshi/expense-tracker",
       liveUrl: "#",
     },
     {
@@ -30,35 +37,33 @@ export default function ProjectsPage() {
       githubUrl: "https://github.com/visheshraghuvanshi/dsp",
       liveUrl: "https://dsp.page.gd/index.php",
     },
-    // Add more projects here if you have them
   ];
   
   return (
-    <div className="bg-secondary/50">
-      <div className="container mx-auto px-6 py-24 md:py-32">
-
-        {/* --- Page Header --- */}
+    <div className="bg-secondary/50 min-h-screen">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 md:py-32">
         <motion.div
-          initial={{ opacity: 0, y: -50 }}
+          initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="text-center max-w-2xl mx-auto"
+          className="text-center max-w-3xl mx-auto mb-12 sm:mb-16"
         >
-          <h1 className="font-serif text-4xl md:text-6xl font-bold tracking-wide mb-4">My Work</h1>
-          <p className="text-lg text-muted-foreground">
+          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4 md:mb-6">
+            My Work
+          </h1>
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground px-2">
             A collection of my projects that demonstrate my skills in turning ideas into functional and user-friendly applications.
           </p>
         </motion.div>
-
-        {/* --- Projects Grid --- */}
-        <div className="grid md:grid-cols-2 gap-8 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, margin: "-50px" }}
+              className="h-full" // Ensures the motion div takes full height so cards stretch evenly
             >
               <ProjectCard {...project} />
             </motion.div>
