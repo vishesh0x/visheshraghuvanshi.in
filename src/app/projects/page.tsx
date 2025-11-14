@@ -26,8 +26,8 @@ export default function ProjectsPage() {
       description: "An all-in-one online learning platform providing educational resources including articles, courses, and videos.",
       tags: ["React", "Firebase", "GraphQL", "Hashnode API"],
       imageUrl: "/projects/excellencestudy.png",
-      githubUrl: "https://github.com/vishesh0x/excellence-study-backend",
-      liveUrl: "https://courses-excellencestudy.vercel.app/", 
+      githubUrl: "https://github.com/vishesh0x/excellence-study",
+      liveUrl: "https://excellence-study.netlify.app/", 
     },
     {
       title: "Doubt Solving Portal (DSP)",
