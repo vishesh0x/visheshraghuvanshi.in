@@ -10,7 +10,7 @@ export default function ProjectsPage() {
       description: "An offline-first productivity app using Spring Boot and SQLite to track goals, habits, and tasks locally.",
       tags: ["Spring Boot", "Hibernate", "SQLite", "Java", "In Progress"],
       imageUrl: "/project-placeholder.png",
-      githubUrl: "https://github.com/visheshraghuvanshi/tasktrail",
+      githubUrl: "https://github.com/vishesh0x/tasktrail",
       liveUrl: "#", 
     },
     {
@@ -18,7 +18,7 @@ export default function ProjectsPage() {
       description: "A web application to manage and analyze personal expenses with real-time insights.",
       tags: ["Spring Boot", "MySQL", "Java", "JWT"],
       imageUrl: "/project-placeholder.png",
-      githubUrl: "https://github.com/visheshraghuvanshi/expense-tracker",
+      githubUrl: "https://github.com/vishesh0x/expense-tracker",
       liveUrl: "#",
     },
     {
@@ -26,7 +26,7 @@ export default function ProjectsPage() {
       description: "An all-in-one online learning platform providing educational resources including articles, courses, and videos.",
       tags: ["React", "Firebase", "GraphQL", "Hashnode API"],
       imageUrl: "/projects/excellencestudy.png",
-      githubUrl: "https://github.com/visheshraghuvanshi/excellence-study-backend",
+      githubUrl: "https://github.com/vishesh0x/excellence-study-backend",
       liveUrl: "https://courses-excellencestudy.vercel.app/", 
     },
     {
@@ -34,7 +34,7 @@ export default function ProjectsPage() {
       description: "A web application enabling students to ask questions, get faculty responses, and engage in collaborative learning.",
       tags: ["PHP", "MySQL", "Collaborative Learning"],
       imageUrl: "/projects/dsp.png",
-      githubUrl: "https://github.com/visheshraghuvanshi/dsp",
+      githubUrl: "https://github.com/vishesh0x/dsp",
       liveUrl: "https://dsp.page.gd/index.php",
     },
   ];
