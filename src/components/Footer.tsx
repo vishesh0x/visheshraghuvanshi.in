@@ -2,14 +2,12 @@
 
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { Code, Github, Linkedin } from "lucide-react";
-// --- 1. Import new icons ---
+import { Github, Linkedin } from "lucide-react";
 import { SiX, SiLeetcode } from "react-icons/si";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   
-  // --- 2. Updated and more relevant social links ---
   const socialLinks = [
     { name: "GitHub", href: "https://github.com/vishesh0x", icon: <Github className="h-4 w-4" /> },
     { name: "LinkedIn", href: "https://linkedin.com/in/vishesh0x", icon: <Linkedin className="h-4 w-4" /> },
@@ -19,11 +17,8 @@ export default function Footer() {
 
   return (
     <footer className="bg-secondary/50">
-      {/* --- Top Section: Call to Action (Refined) --- */}
       <div className="py-12 md:py-16">
-        {/* --- Responsive padding --- */}
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          {/* --- 3. Brand-consistent font --- */}
           <h2 className="font-serif text-3xl sm:text-4xl font-bold tracking-tight mb-4">
             Let&apos;s Build Something Amazing
           </h2>
@@ -36,17 +31,15 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* --- Bottom Section: Links & Copyright (Rebuilt) --- */}
       <div className="border-t">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          {/* --- 4. New responsive layout --- */}
           <div className="flex flex-col sm:flex-row justify-between items-center gap-6">
             
-            {/* Left Side: Logo & Copyright */}
             <div className="text-center sm:text-left">
               <Link href="/" className="flex items-center justify-center sm:justify-start gap-2">
-                <Code className="h-5 w-5 text-primary" />
-                {/* --- 5. Brand-consistent font --- */}
+                <div className="h-5 w-5 bg-primary text-primary-foreground flex items-center justify-center rounded-md font-bold text-xs">
+                  V
+                </div>
                 <span className="font-bold tracking-tight text-lg">Vishesh Kumar</span>
               </Link>
               <p className="text-sm text-muted-foreground mt-2">
@@ -54,7 +47,6 @@ export default function Footer() {
               </p>
             </div>
             
-            {/* Right Side: Socials */}
             <div className="flex gap-2">
               {socialLinks.map(link => (
                 <a 
@@ -64,7 +56,6 @@ export default function Footer() {
                   rel="noopener noreferrer" 
                   aria-label={link.name}
                 >
-                  {/* --- 6. Cleaner "ghost" variant for icon buttons --- */}
                   <Button variant="ghost" size="icon">
                     {link.icon}
                   </Button>
@@ -73,8 +64,6 @@ export default function Footer() {
             </div>
           </div>
           
-          {/* --- 7. All repetitive nav links and old copyright text removed --- */}
-
         </div>
       </div>
     </footer>
