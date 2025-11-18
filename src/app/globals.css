@@ -36,34 +36,34 @@
     --radius: 0.5rem;
   }
 
-  /* Dark Theme Variables */
+  /* Dark Theme Variables (Option 2: True Black) */
   .dark {
-    --background: 222 24% 17%; /* Dark Slate */
-    --foreground: 220 14% 75%; /* Soft Gray for text */
+    --background: 0 0% 0%; /* Pure Black */
+    --foreground: 210 20% 85%;
     
-    --card: 222 24% 20%; /* Slightly lighter slate for cards */
-    --card-foreground: 220 14% 75%;
+    --card: 240 6% 10%; /* Very dark gray for cards */
+    --card-foreground: 210 20% 85%;
 
-    --popover: 222 24% 20%;
-    --popover-foreground: 220 14% 75%;
+    --popover: 240 6% 10%;
+    --popover-foreground: 210 20% 85%;
 
-    --primary: 217 91% 60%; /* Professional Blue stands out nicely */
-    --primary-foreground: 222 24% 12%; /* Darker text for contrast on blue button */
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 24% 12%;
 
-    --secondary: 222 24% 22%;
-    --secondary-foreground: 220 14% 75%;
+    --secondary: 240 6% 8%;
+    --secondary-foreground: 210 20% 85%;
 
-    --muted: 222 24% 22%;
-    --muted-foreground: 222 24% 55%;
+    --muted: 240 6% 8%;
+    --muted-foreground: 240 5% 55%;
 
-    --accent: 222 24% 22%;
-    --accent-foreground: 220 14% 75%;
+    --accent: 240 6% 8%;
+    --accent-foreground: 210 20% 85%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 222 24% 22%;
-    --input: 222 24% 22%;
+    --border: 240 6% 8%;
+    --input: 240 6% 8%;
     --ring: 217 91% 60%;
   }
 }
