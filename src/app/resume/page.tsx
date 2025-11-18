@@ -60,12 +60,14 @@ const projects = [
     ]
   },
   {
-    title: "Personal Expense Tracker",
-    description: "A web application to manage and analyze personal expenses with real-time insights.",
+    title: "ET - Expense Tracker",
+    description: "A secure, full-stack financial dashboard built with Spring Boot and React. Features real-time spending analytics, a custom OLED dark mode, and stateless JWT authentication, fully deployed on the cloud.",
     bullets: [
-      "Developed a full-stack Spring Boot + MySQL application.",
+      "Implemented robust stateless authentication using Spring Security 6 and JWT (JSON Web Tokens), ensuring secure API access and data isolation for multiple users.",
       "Implemented JWT-based authentication and authorization for secure access.",
-      "Created a dashboard with monthly and category-wise reports."
+      "Created a dashboard with monthly and category-wise reports.",
+      "Orchestrated a cloud-native deployment pipeline, hosting the Dockerized backend on Render, frontend on Vercel, and utilizing a serverless TiDB (MySQL) database."
+
     ]
   }
 ];

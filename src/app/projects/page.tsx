@@ -14,12 +14,12 @@ export default function ProjectsPage() {
       liveUrl: "#", 
     },
     {
-      title: "Personal Expense Tracker",
+      title: "ET Expense Tracker",
       description: "A web application to manage and analyze personal expenses with real-time insights.",
       tags: ["Spring Boot", "MySQL", "Java", "JWT"],
-      imageUrl: "/project-placeholder.png",
+      imageUrl: "/projects/et.png",
       githubUrl: "https://github.com/vishesh0x/expense-tracker",
-      liveUrl: "#",
+      liveUrl: "https://et-expense-tracker.vercel.app/",
     },
     {
       title: "Excellence Study",
